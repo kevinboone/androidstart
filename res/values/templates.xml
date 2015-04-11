@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myPopupMenuStyle" 
+          parent="@android:style/Theme.Dialog">
+        <item name="android:textSize">?popup_menu_text_size</item>
+        <item name="android:layout_height">?popup_menu_text_size</item>
+        <item name="android:dropDownHeight">?popup_menu_text_size</item>
+    </style>
+
+    <style name="mainlist" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">?mainlist_background_colour</item>
+        <item name="android:divider">?mainlist_background_colour</item>
+    </style>
+
+    <style name="applist" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">?applist_background_colour</item>
+        <item name="android:divider">?applist_background_colour</item>
+    </style>
+
+    <style name="main_list_item" parent="@android:style/TextAppearance.Medium">
+    </style>
+
+    <style name="app_list_item" parent="@android:style/TextAppearance.Medium">
+    </style>
+
+    <style name="app_list_item_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">?general_text_size</item>
+        <item name="android:textColor">?applist_text_colour</item>
+    </style>
+
+    <style name="main_list_item_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">?general_text_size</item>
+        <item name="android:textColor">?mainlist_text_colour</item>
+    </style>
+
+    <style name="caption_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">?caption_text_colour</item>
+        <item name="android:textSize">?caption_text_size</item>
+        <item name="android:layout_marginLeft">2pt</item>
+    </style>
+
+    <style name="caption" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">?caption_background_colour</item>
+    </style>
+
+    <!--drawable name="mainlist_selector_focused">?mainlist_pressed_background_colour</drawable>
+    <drawable name="mainlist_selector_pressed">?mainlist_pressed_background_colour</drawable>
+    <drawable name="applist_selector_focused">?applist_pressed_background_colour</drawable>
+    <drawable name="applist_selector_pressed">?applist_pressed_background_colour</drawable-->
+
+    <drawable name="mainlist_selector_focused">#C0C0C0</drawable>
+    <drawable name="mainlist_selector_pressed">#C0C0C0</drawable>
+    <drawable name="applist_selector_focused">#C0C0C0</drawable>
+    <drawable name="applist_selector_pressed">#C0C0C0</drawable>
+</resources>
+
+

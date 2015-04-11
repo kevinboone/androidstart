@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    >
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"
+            />
+            <EditText
+                android:id="@+id/search_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_string_hint"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    >
+   
+       <CheckBox android:id="@+id/checkbox_search_apps"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dp"
+          android:text="@string/apps"
+       />
+
+       <CheckBox android:id="@+id/checkbox_search_bookmarks"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dp"
+          android:text="@string/bookmarks"
+       />
+
+       <CheckBox android:id="@+id/checkbox_search_files"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/files"
+       />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    >
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/search_button"
+                android:onClick="onSearchClick" 
+            />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/clear_button"
+                android:onClick="onClearClick" 
+            />
+            <Button
+                android:id="@+id/stop_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/stop_button"
+                android:onClick="onStopClick" 
+            />
+    </LinearLayout>
+   
+
+        <View
+           android:layout_width="10dp"
+           android:layout_height="10dp"
+        />
+        <TextView
+            android:id="@+id/search_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+        />
+        <View
+           android:layout_width="10dp"
+           android:layout_height="10dp"
+        />
+        <ListView 
+            android:id="@+id/searchresultlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/mainlist_selector"
+        />
+
+</LinearLayout>
+

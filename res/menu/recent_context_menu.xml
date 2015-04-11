@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:id="@+id/mainlist_context_menu">
+      <item android:id="@+id/moveup" 
+          android:title="Move up"/>
+      <item android:id="@+id/movedown" 
+          android:title="Move down"/>
+      <item android:id="@+id/clear" 
+          android:title="Clear list"/>
+  </group>
+</menu>

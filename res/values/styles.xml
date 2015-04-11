@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file defines only theme values. Raw styles are in 
+     res/values/templates.xml -->
+<resources>
+    <attr name="general_text_size" format="dimension"/>
+    <attr name="popup_menu_text_size" format="dimension"/>
+    <attr name="caption_text_size" format="dimension"/>
+    <attr name="mainlist_background_colour" format="color"/>
+    <attr name="mainlist_text_colour" format="color"/>
+    <attr name="applist_background_colour" format="color"/>
+    <attr name="applist_text_colour" format="color"/>
+    <attr name="mainlist_pressed_background_colour" format="color"/>
+    <attr name="applist_pressed_background_colour" format="color"/>
+    <attr name="caption_text_colour" format="color"/>
+    <attr name="caption_background_colour" format="color"/>
+
+    <style name="dark_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuStyle</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuStyle</item>
+        <item name="android:listPreferredItemHeightSmall">9pt</item>
+        <item name="android:listPreferredItemHeightLarge">9pt</item>
+        <item name="general_text_size">8pt</item>
+        <item name="popup_menu_text_size">9pt</item>
+        <item name="caption_text_size">9pt</item>
+        <item name="mainlist_background_colour">#FFFFFF</item>
+        <item name="mainlist_text_colour">#000000</item>
+        <item name="applist_background_colour">#000000</item>
+        <item name="applist_text_colour">#FFFFFF</item>
+        <item name="caption_text_colour">#FFFFFF</item>
+        <item name="caption_background_colour">#202020</item>
+    </style>
+
+    <style name="mid_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuStyle</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuStyle</item>
+        <item name="android:listPreferredItemHeightSmall">9pt</item>
+        <item name="android:listPreferredItemHeightLarge">9pt</item>
+        <item name="general_text_size">8pt</item>
+        <item name="popup_menu_text_size">9pt</item>
+        <item name="caption_text_size">9pt</item>
+        <item name="mainlist_background_colour">#808080</item>
+        <item name="mainlist_text_colour">#000000</item>
+        <item name="applist_background_colour">#707070</item>
+        <item name="applist_text_colour">#FFFFFF</item>
+        <item name="caption_text_colour">#000000</item>
+        <item name="caption_background_colour">#909090</item>
+    </style>
+
+    <style name="light_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuStyle</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuStyle</item>
+        <item name="android:listPreferredItemHeightSmall">9pt</item>
+        <item name="android:listPreferredItemHeightLarge">9pt</item>
+        <item name="general_text_size">8pt</item>
+        <item name="popup_menu_text_size">9pt</item>
+        <item name="caption_text_size">9pt</item>
+        <item name="mainlist_background_colour">#000000</item>
+        <item name="mainlist_text_colour">#FFFFFF</item>
+        <item name="applist_background_colour">#EDEDED</item>
+        <item name="applist_text_colour">#000000</item>
+        <item name="caption_text_colour">#000000</item>
+        <item name="caption_background_colour">#C0C0C0</item>
+    </style>
+
+</resources>

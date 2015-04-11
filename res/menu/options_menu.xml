@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:id="@+id/mainlist_context_menu">
+      <item android:id="@+id/newgroup" 
+          android:title="New group"/>
+      <item android:id="@+id/sortgroups" 
+          android:title="Sort groups"/>
+      <item android:id="@+id/reset" 
+          android:title="Reset groups"/>
+      <item android:id="@+id/refresh" 
+          android:title="Refresh"/>
+      <item android:id="@+id/search" 
+          android:title="Search..."/>
+      <item android:id="@+id/settings" 
+          android:title="Settings..."/>
+      <item android:id="@+id/about" 
+          android:title="About..."/>
+      <item android:id="@+id/close" 
+          android:title="Close"/>
+      <item android:id="@+id/exit" 
+          android:title="Exit"/>
+  </group>
+</menu>

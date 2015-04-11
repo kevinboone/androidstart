@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:shrinkColumns="0"
+     style="@style/caption"
+      >
+
+    <TableRow android:layout_width="fill_parent">
+
+       <TextView
+            android:id="@+id/caption"
+            style="@style/caption_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            />            
+
+       <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />            
+
+       <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="12pt"
+            android:layout_height="12pt"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3pt"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_search" 
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/menuicon"
+            android:layout_width="12pt"
+            android:layout_height="10pt"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="2pt"
+            android:layout_marginTop="2pt"
+            android:layout_marginBottom="4pt"
+            android:src="@drawable/ic_menuicon" 
+            >
+        </ImageView>
+
+       <!--ImageView
+            android:id="@+id/closeicon"
+            android:layout_width="12pt"
+            android:layout_height="12pt"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3pt"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_closeicon" 
+            >
+        </ImageView-->
+
+ 
+     </TableRow>
+
+  </TableLayout>
+
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      style="@style/applist"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:shrinkColumns="0,1"
+      >
+
+    <TableRow android:layout_width="fill_parent">
+        <ListView 
+            style="@style/mainlist"
+            android:id="@+id/mainlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/mainlist_selector"
+        />
+
+        <ListView 
+            style="@style/applist"
+            android:id="@+id/applist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/applist_selector"
+        />
+    </TableRow>
+  </TableLayout>
+</LinearLayout>
+

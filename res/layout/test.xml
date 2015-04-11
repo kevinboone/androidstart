@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:shrinkColumns="0"
+      >
+
+    <TableRow android:layout_width="fill_parent">
+
+       <TextView
+            android:id="@+id/caption"
+            style="@style/caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:lines="1"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:inputType="text"
+            android:text="@string/app_name"
+            />            
+
+       <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />            
+
+       <ImageView
+            android:id="@+id/closeicon"
+            android:layout_width="10pt"
+            android:layout_height="10pt"
+            android:layout_marginLeft="3px"
+            android:layout_marginRight="3pt"
+            android:layout_marginTop="2px"
+            android:src="@drawable/ic_closeicon" 
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/menuicon"
+            android:layout_width="10pt"
+            android:layout_height="10pt"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="6pt"
+            android:layout_marginTop="2pt"
+            android:layout_marginBottom="4pt"
+            android:src="@drawable/ic_menuicon" 
+            >
+        </ImageView>
+ 
+     </TableRow>
+
+  </TableLayout>
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+    <ListView 
+        android:id="@+id/mainlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+    <ListView 
+        android:id="@+id/applist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+  </LinearLayout>
+</LinearLayout>
+

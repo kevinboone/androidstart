@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Start</string>
+    <string name="new_program_group">New program group</string>
+    <string name="enter_new_group_name">Enter new group name</string>
+    <string name="new_group">New group</string>
+    <string name="input_cannot_be_empty">Input cannot be empty</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="all_apps">All apps</string>
+    <string name="running_apps">Running apps</string>
+    <string name="duplicate_group_name">Duplicate group name</string>
+    <string name="pin_to_group">Pin to goup</string>
+    <string name="select_program_group">Select program group</string>
+    <string name="rename_item">Rename item</string>
+    <string name="enter_new_name">Enter new name</string>
+    <string name="aboutdotdot">About...</string>
+    <string name="aboutstart">About Start</string>
+    <string name="reset_groups">Reset groups to defaults? This operation cannot be undone</string>
+    <string name="confirm">Confirm</string>
+    <string name="recent">Recent</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="files">Files</string>
+    <string name="cannot_list_dir">Can\'t list directory</string>
+    <string name="uplink">"[Up]"</string>
+    <string name="info">Info</string>
+    <string name="no_more_info">No more information for this item</string>
+    <string name="search_menu">Search...</string>
+    <string name="search_title">Search</string>
+    <string name="search_button">Search</string>
+    <string name="search_string_hint">Partial name of an app or file</string>
+    <string name="empty_search">Search string cannot be empty</string>
+    <string name="no_search_matches">No matches for search text</string>
+    <string name="clear_button">Clear</string>
+    <string name="stop_button">Stop</string>
+    <string name="apps">Apps</string>
+    <string name="nothing_to_search">No locations selected to search</string>
+    <string-array name="themevalues">
+      <item>dark</item>
+      <item>mid</item>
+      <item>light</item>
+    </string-array>
+    <string-array name="themeentries">
+      <item>Dark</item>
+      <item>Mid</item>
+      <item>Light</item>
+    </string-array>
+    <string-array name="textsizevalues">
+      <item>6</item>
+      <item>7</item>
+      <item>8</item>
+      <item>9</item>
+      <item>10</item>
+    </string-array>
+    <string-array name="textsizeentries">
+      <item>6pt</item>
+      <item>7pt</item>
+      <item>8pt</item>
+      <item>9pt</item>
+      <item>10pt</item>
+    </string-array>
+</resources>

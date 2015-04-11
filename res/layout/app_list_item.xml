@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp" 
+    style="@style/app_list_item"
+    >
+ 
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="8pt"
+        android:layout_height="8pt"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="20px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+ 
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:text=""
+        style="@style/app_list_item_text"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="8pt"
+        android:layout_height="8pt"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="20px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+    </ImageView>
+ 
+</LinearLayout>

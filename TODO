@@ -1,0 +1,15 @@
+popup menus too big -- seems to be impossible without re-implementing the
+popup menu code completely :/
+
+It would be nice to have a drag'n'drop way to edit menus, rather than
+clicking 'move up', 'move down', repeatedly
+
+Favourites
+
+Minor internal matters:
+
+The text in the info dialog boxes is hard-coded and needs to be extract
+to resource files
+
+Some XML layout files contain hard-coded text strings
+

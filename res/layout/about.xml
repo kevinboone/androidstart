@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_weight="0.7"
+    android:layout_marginRight="10px"
+    >
+
+   <ImageView
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="10px"
+        android:src="@drawable/ic_launcher" 
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+      <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:text="AndroidStart version 0.1.1"
+          />
+
+      <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:text="Copyright &#169;2014 Kevin Boone"
+          />
+
+      <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:text="Web site: kevinboone.net/androidstart.html"
+          android:layout_marginRight="10px"
+          android:autoLink="web"
+          />
+
+   </LinearLayout>
+
+</LinearLayout>

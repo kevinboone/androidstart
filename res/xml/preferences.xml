@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+	 
+	<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	    <PreferenceCategory
+	        android:title="General settings"
+	        android:key="general_settings">
+	         
+              <CheckBoxPreference
+                 android:defaultValue="true"
+                 android:key="show_all_apps"
+                 android:title="Show 'All apps' list" 
+                 android:dialogTitle="Show 'All apps' list"
+                 android:summary="Show 'All apps' list in left-hand pane"
+                 android:dialogMessage="Select whether to show the 'All apps' list in the left-hand pane"   
+              />
+	         
+              <CheckBoxPreference
+                 android:defaultValue="true"
+                 android:key="show_files"
+                 android:title="Show 'Files' list" 
+                 android:dialogTitle="Show 'Files' list"
+                 android:summary="Show 'Files' list in left-hand pane"
+                 android:dialogMessage="Select whether to show the 'Files' list in the left-hand pane"   
+              />
+	         
+              <CheckBoxPreference
+                 android:defaultValue="true"
+                 android:key="show_bookmarks"
+                 android:title="Show 'Bookmarks' list" 
+                 android:dialogTitle="Show 'Bookmarks' list"
+                 android:summary="Show 'Bookmarks' list in left-hand pane"
+                 android:dialogMessage="Select whether to show the 'Bookmarks' list in the left-hand pane"   
+              />
+	         
+              <CheckBoxPreference
+                 android:defaultValue="true"
+                 android:key="show_recent"
+                 android:title="Show 'Recent' list" 
+                 android:dialogTitle="Show 'Recent' list"
+                 android:summary="Show 'Recent' list in left-hand pane"
+                 android:dialogMessage="Select whether to show the 'Recent' list in the left-hand pane"   
+              />
+	         
+              <CheckBoxPreference
+                 android:defaultValue="true"
+                 android:key="show_running_apps"
+                 android:title="Show 'Running apps' list" 
+                 android:dialogTitle="Show 'Running apps' list"
+                 android:summary="Show 'Running apps' list in left-hand pane"
+                 android:dialogMessage="Select whether to show the 'Running apps' list in the left-hand pane"   
+              />
+	         
+              <EditTextPreference
+                 android:key="recent_max"
+                 android:title="Maximum Recent entries"
+                 android:dialogTitle="Maximum Recent entries"
+                 android:summary="Maximum number of apps in 'Recent apps' list"
+                 android:dialogMessage="Enter the Maximum number of items retained in the Recent list"   
+                 android:inputType="number"
+                 android:defaultValue="10" 
+               />
+
+	    </PreferenceCategory>
+
+	    <PreferenceCategory
+	        android:title="File list settings"
+	        android:key="general_settings">
+
+              <CheckBoxPreference
+                 android:defaultValue="false"
+                 android:key="show_hidden"
+                 android:title="Show hidden files" 
+                 android:dialogTitle="Show hidden files"
+                 android:summary="Show hidden files in file lists"
+                 android:dialogMessage="Select whether to show hidden files in file lists"   
+              />
+	         
+              <CheckBoxPreference
+                 android:defaultValue="false"
+                 android:key="files_first"
+                 android:title="Files first" 
+                 android:dialogTitle="Files first"
+                 android:summary="Show files before directories in file lists"
+                 android:dialogMessage="Select whether to show files before directories in file lists"   
+              />
+	         
+            </PreferenceCategory>
+	 
+	    <PreferenceCategory
+	        android:title="Task manager settings"
+	        android:key="task_list_settings">
+
+              <CheckBoxPreference
+                 android:defaultValue="false"
+                 android:key="show_no_activity_tasks"
+                 android:title="Show no-activity tasks" 
+                 android:dialogTitle="Show no-activity tasks"
+                 android:summary="Show tasks with no activities in 'Running apps' list"
+                 android:dialogMessage="Select whether to show tasks that are associated with no running activities in the 'Running apps' list"   
+              />
+	         
+            </PreferenceCategory>
+	 
+	    <PreferenceCategory
+	        android:title="Appearance settings"
+	        android:key="appearance_settings">
+
+              <ListPreference
+                 android:key="theme"
+                 android:defaultValue="dark"
+                 android:title="Display theme" 
+                 android:dialogTitle="Display theme"
+                 android:summary="Set the display theme"
+                 android:entries="@array/themeentries"
+                 android:entryValues="@array/themevalues"
+              />
+	         
+              <ListPreference
+                 android:key="list_text_size"
+                 android:defaultValue="8"
+                 android:title="List text size" 
+                 android:dialogTitle="List text size"
+                 android:summary="Set the text size for the main lists"
+                 android:entries="@array/textsizeentries"
+                 android:entryValues="@array/textsizevalues"
+              />
+	         
+            </PreferenceCategory>
+	 
+	</PreferenceScreen>

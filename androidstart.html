@@ -1,0 +1,383 @@
+<a href="software.html">&bull; Software</a><br/>
+
+<h1>AndroidStart: a start menu for Android</h1>
+
+<img src="androidstart_screenshot_portrait.png" 
+   vspace="20" hspace="20" align="left"/>
+
+<img src="androidstart_screenshot_landscape.png" 
+   vspace="20" hspace="20" align="right"/>
+
+<img src="androidstart_screenshot_search.png" 
+   vspace="20" hspace="20" align="right"/>
+
+<table cellpadding="20px" style="border: solid black 1px; margin: 15px">
+<tr>
+<td>
+<b>Note</b>:<br/>
+AndroidStart is a work in progress. It works better on some devices than
+others, and I can't guarantee that it won't leave you needing to do a factory
+reset. Please use with caution if you try this app in its current,
+pre-release form.
+</td>
+</tr>
+</table>
+
+AndroidStart is a simple program launcher for Android, styled like the 'Start
+menu''of Microsoft Windows and, let's face it, most desktop computers these
+days. It incorporates a simple file browser, allowing documents to be launched
+directly from folders, and a task manager. 
+Start is not a full home screen -- it's designed to operate
+in conjunction with your existing home screen and file manager, not as a replacement for them.
+<p/>
+Once installed, the next time you press the start button, your Android device
+should ask whether you want to make Start the default app for the home
+operation. You can either accept this -- in which case the Home button will
+always invoke Start -- or just say no and run Start from an icon on your
+ordinary home screen.
+<p/>
+AndroidStart is organized as a pop-up dialog -- unlike a 
+full lancher, its user interface pops up over the top of whatever
+other app is on screen. If you press the Back button, it will disappear.
+The intention is that apps that you use frequently will appear on the
+'main list' -- the left-hand pane of the Start window -- and always be
+accessible with one touch.
+<p/>
+AndroidStart provides access to Web browser bookmarks as well as
+apps and files. It maintains a list of recently-launched items, 
+including bookmarks. It shows which tasks are currently running and 
+-- to some limited extent (see notes below) -- provides a 'task kill'
+facility.
+<p/> 
+This app is designed for use with Android devices with decent-resolution
+screens, and Android version 4.3 and later. It may work on other
+devices, but none has been tested.
+
+<br clear="all"/>
+
+<h2>Installation</h2>
+
+Download the APK package from the Downloads section, copy it to your
+Android device, and install it using any file manager. Or simply
+download the APK directly from this page using your device's Web browser.
+You may have
+to tell your device to allow non-market apps. AndroidStart won't ever
+be appearing on the Android Market, because I can't afford to pay
+Google to host stuff that I'm giving away for free.
+
+<h2>Operation</h2>
+
+Essentially: click on "All apps" to see a list of all installed apps,
+and then click on the list item to launch the app. 
+Long-click on any item in any list
+to see a menu of commands appropriate to that item. 
+
+<h3>Creating new program groups</h3>
+
+Create new
+program groups by clicking the menu icon in the title bar 
+(or pressing the menu button,
+if you're fortunate enough still to have one) and selecting New group.
+You can then 'pin' any lanchable item -- app, file, or directory, 
+into the new group.
+
+<h3>Pinning</h3>
+
+long-click on any item in the display to show a menu; from this menu
+select 'Pin' to copy the item to any program group. A list of
+available groups will be presented in a dialog box; 
+the group called
+"[Top]" is the main list on the left-hand pane of the app. 
+Apps and bookmarks may be pinned; items in one program group
+may be pinned in another if required. Directories (folders) may be pinned
+in program groups, which is a handy way to get access to frequently-browsed
+directories.
+
+<h3>Special program groups</h3>
+
+<i>All apps</i>: shows a list of all installed apps that indicate a willingness
+to appear on a launcher. Items on this list cannot usefully be edited. However,
+their names can be edited once they have been pinned to a program group.
+<p/>
+<i>Recent</i>: lists the most-recently-launched items, up to a fixed
+number (default 10). To clear this list, long-click to show the menu,
+then click Clear list. Items on this list can be edited, but edits will
+be lost as soon as any item is pushed off the list by more recent entries. 
+<p/>
+<i>Running apps</i>: lists the running tasks, most recent at the top.
+A task can be woken or killed (but see notes below) from the
+long-click menu. 
+<p/>
+<i>Bookmarks</i>: a list of Web browser bookmarks. Because this list
+is derived from Android, the items cannot be removed or edited.
+<p/>
+<i>Files</i>: a list of files and folders, starting at the root directory.
+In practice, little in the root directory is likely to be of much 
+interest, or even accessible. It's generally more useful to navigate
+to the place where user data is actually stored (e.g., <code>/sdcard</code>
+or </code>/storage</code>), and pin the relevant folder to a program
+group or main list.
+<p/>
+These groups can be shown or hidden using the Settings menu; by default,
+all are shown. Removing the Files group removes only the default, 
+root-directory, Files entry; other file lists pinned by the user are
+left as they are. These user-defined file lists can, however, be 
+unpinned using the long-click menu.
+
+<h3>Editing group layouts</h3>
+
+The items (of any type) in a program group can be rearranged in various
+ways. Long click the item and select 'Move up' or 'Move down'. Long-click
+the group name itself and select 'Sort' to sort the items in the
+group into alphabetical order. Note that sorting is affected by 
+the 'Files first' option in the Settings screen -- the default is
+to place items with no contents (app, bookmarks) in front of directories
+and program groups, but this change be changed. The items in the
+main list in the right-hand pane can be rearranged similarly. To sort
+these items, select 'Sort groups' from the options menu.
+
+<h3>Getting to the standard home screen</h3>
+
+The ordinary launcher app will (should) show up in the 'All apps'
+list. It's likely to be a good idea to pin this to the main list
+to make it easy to get to the original launcher. Start can't do this
+automatically, as most Android device vendors supply replacements
+for the stock Android launcher, and their package names are
+not easy to guess.
+
+<h3>Searching</h3>
+
+Select 'Search...' from the options menu. You can then enter some
+text for which to search. Start can search any of the following:
+<ul>
+<li>Names of installed apps</li>
+<li>Browser bookmarks (titles and URLs)</li>
+<li>Names of files</li>
+</ul>
+
+Searches will include partial matches, and are case-insensitive.
+File search starts in the <code>/storage</code> directory, which
+will include both the internal and external storage locations in
+most modern android devices. Note that there is an arbitrary limit
+of 200 on the number of results that will be returned by the search.
+<p/>
+Searches can take a long time, especially if the device contains many
+files. A search can be stopped at any time by clicking the Stop button,
+or just closing the Search dialog box.
+
+<h3>Appearance</h3>
+
+Some small changes to the colour and size of the user interface may be
+made through the Appearance section of the Settings page. Probably the 
+most important setting here is the text size: in operation, the size of
+the text sets the size of the user interface, and for efficient operation
+it's important to get a good balance between getting plenty of information
+on screen (smaller text) and not pressing the wrong entry by mistake
+(larger text).
+
+
+<h2>Technical notes and limitations</h2>
+
+When Start is dismissed, either by clicking the close (X) button, or
+clicking somewhere outside its window, it just tells Android to
+put its task in the background. This has the effect of leaving the
+process running, so it is quick to restart, but does use more
+memory (although not usually very much). Android will close the
+program completely if there is a real shortage of memory.
+To shut Start down completely, use the Exit command in the main 
+menu; this should rarely, if ever, be necessary.
+<p/>
+Reinstalling Start, or installing a later version, should not cause
+any loss of configuration -- the menu layout is stored in persistent
+storage. However, it's possible that configuration may be lost if
+a later version has a configuration that is thoroughly incompatible
+with that of the older. If you want to reset the layout to defaults,
+delete the Start app's stored data using the Apps page of the 
+Android Settings app.
+<p/>
+The special program groups like 'All apps' cannot be deleted using
+the long-click menu. They can, however, be shown or hidden using the
+Settings screen. 
+<p/>
+Items in most lists can be renamed. This is useful if
+the app's original name is so long that it makes the list look unslightly.
+Items in some automatically-generated lists like Recent can also be renamed,
+but the rename will last only until the list is regenerated.
+<p/>
+When selecting an activity from the 'Running apps' list, it is 
+invoked the same way as an activity that is not already running -- by
+creating an Android Intent with its package name and starting it. Since
+Android will not normally allow more than one instance of the same
+package, this nearly always does the right thing.
+<p/>
+Building the 'All apps' list is not as speedy as it ought to be. 
+The reason for this is that AndroidStart tries to size its main
+window to have minimum height, and to do this it has to measure
+the size of all the items in the various lists being displayed. The
+way it does this does not seem to be very efficient. It's particularly
+noticeable on Samsung devices that have hundreds of apps 
+factory-installed. 
+<p/>
+Start does not respond dynamically to changes in app names or icons
+made in other launchers,
+although it does recognize when apps have been added or deleted.
+The reason for this lies in Start's
+agressive caching of app data, to make the lists redraw more quickly.
+<p/>
+Unlike in most desktop operating systems, there is no way for 
+an Android app to compell a specific other app to run.
+All it can do is to specify 'intents,' which are a combination of
+program package names, MIME types, and categories. Android 
+matches the intent against
+the app database, using information provided by the app developers.
+There are some Android apps that are notoriously awkward to launch,
+and launchers like Start have to try various methods of specifying
+the intents. Even then, sometimes an intent will match multiple apps,
+and Android will offer a choice of apps to launch (it's Android 
+doing that, not the launcher). In practice, most apps seem to launch
+OK, but there could well be some rogue ones.
+<p/>
+Start tries to launch as a pop-up, so that you can easily return 
+to the previous app by clicking the back button, or clicking anywhere
+outside the Start window. However, this pop-up functionality appears
+to be broken as of Android 4.4.2. In this and later versions, Start
+will always pop up over the app that was in the foreground the first time
+that Start was launched. If Start is the default launcher, and the 
+device is rebooted, then it Start will always pop up <i>over a blank screen</i>.
+Although this has no effect on Start's operation, it's aesthetically
+unsatisfactory. I've noticed that other apps that launch as pop-ups
+behave similarly on 4.4.x, so I don't think that Start is to blame
+particularly. 
+<p/>
+What constitutes a 'bookmark' varies from one device to another. In general,
+Start will only show bookmarks from the device's default browser, if
+more than one browser is installed. If Chrome, for example, is installed
+as an app, then Start will not show Chrome bookmarks. However, on a 
+device such as the Nexus 7, where Chrome is the default browser,
+its bookmarks are shown. Where bookmarks are in folders, the folders
+are flattened into a single list. Regardless of where the bookmarks
+were found, the device's standard procedure will be followed for
+launching them. There's nothing to stop a bookmark created in the default
+browser being launched by Chrome or FireFox, for example, if the
+software is installed. Typically Android will offer a choice of browsers
+when launching a bookmark, unless you have configured a specific browser
+to be used all the time.
+<p/>
+It would be nice if Start could automatically populated a folder with
+the locations of the common user storage locations -- the internal
+and external SD cards, for example. Unfortunately, these locations vary
+not only from version to version of Android, but by device vendor.
+So building a list of useful folders is an exercise left to the user.
+Similar problems affect searching for useful files -- there are no standard
+locations for internal and external storage locations that are used by
+all vendors. Starting a search in <code>/storage</code> will capture
+most user-accessible storage areas, but some will appear more than once,
+because there are often symbolic links that put the same directory in
+more than one place (presumably for backward compatibility purposes).
+In order not to repeat the same file two or three times in the search
+results, the search facility will reject files that have the same
+name and size as a file already in the results. 
+<p/>
+A note on 'killing tasks' in Android: you can't. The best that any task
+manager app can do is to invoke the <code>killBackgroundProcesses()</code>
+API call on a task. This may, or may not, kill some operating system
+processes and/or reclaim some memory. The task itself remains in
+Android's active task list. The number of running activities associated
+with a task gives some guide to the number of background processes.
+In common with most so-called 'task killer' apps, Start dishonestly
+conceals tasks where this number is zero, treating them as 'dead',
+unless you explicitly enable the listing of zero-activity tasks
+using the Settings page. Notwithstanding whether a task killed in
+this way is really 'dead' or not, it's important to understand that
+Start can't kill any task unless it really is in the background, which
+means no part of its user interface can be visible. In addition, Android
+simply rejects kill operations on many tasks, if they need to 
+keep running for proper operation.
+<p/>
+The Settings menu can be used to show or hide the special program groups
+like 'Files' and 'All apps'. However, the program groups list has
+configurable layout and names, and Start does not record where a removed
+item <i>was</i>, or what it was called. So when one of these special
+groups is restored to the list, it is added at the bottom, and with
+its default name. 
+
+<h2>Android 5 issues</h2>
+
+Start is broadly functional on Android 5. However there are a couple of niggles.
+<p/>
+First, Android 5 has the same problem that 4.4 has, in which Start will not pop up on top of the running app: the system always restores the activity which
+was 'under' Start the first time it was executed.
+<p/>
+Second, and more irritating, Android 5 no longer provides a method by
+which any non-system app can manage other tasks. On the 'Running apps' 
+list all you're likely to see is Start itself, and the stock launcher 
+(if it is running). All other apps are concealed. So far as I known,
+Google has not provided any alternative task management facilities and
+Start will no longer be able to act as a task manager on Android 5. 
+I presume this change affects all 3rd-party tasks managers, and
+complaints should be directed to Google. 
+<p/>
+
+
+<h2>Disclaimer, etc</h2>
+I wrote AndroidStart for my own use, and I'm publishing it in case somebody
+else might get some use from it -- even if it's only to look at the source
+code and see how not to write an Android app. It might work for you, it
+might not. If it doesn't, you're very welcome to fix it.
+
+<h2>Revision history</h2>
+
+<table cellpadding="5px">
+  <tr>
+    <td valign="top">
+      0.1.1
+    </td>
+    <td valign="top">
+      November 13 2014 
+    </td>
+    <td valign="top">
+      Fixed some layout bugs 
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      0.1.0
+    </td>
+    <td valign="top">
+      November 10 2014 
+    </td>
+    <td valign="top">
+      Added search facility
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      0.0.2
+    </td>
+    <td valign="top">
+      November 6 2014 
+    </td>
+    <td valign="top">
+      Fixed a nasty problem where nothing would launch at all after a 
+      cold boot on Android 4.4.x devices<br/>
+      Added settings for text size and display colour
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      0.0.1
+    </td>
+    <td valign="top">
+      October 14 2014 
+    </td>
+    <td valign="top">
+      First working version 
+    </td>
+  </tr>
+</table>
+
+<h2>Downloads</h2>
+<ul>
+<li><a href="AndroidStart-0.1.1.apk">Android APK package</li>
+<li><a href="androidstart-0.1.1.zip">Source code</li>
+</ul>
