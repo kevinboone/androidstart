@@ -1,0 +1,18 @@
+# view AndroidManifest.xml #generated:19
+-keep class net.kevinboone.androidstart.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class net.kevinboone.androidstart.SearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class net.kevinboone.androidstart.SettingsActivity { <init>(...); }
+
+# onClick res/layout/search.xml #generated:66
+-keepclassmembers class * { *** onClearClick(...); }
+
+# onClick res/layout/search.xml #generated:60
+-keepclassmembers class * { *** onSearchClick(...); }
+
+# onClick res/layout/search.xml #generated:72
+-keepclassmembers class * { *** onStopClick(...); }
+
